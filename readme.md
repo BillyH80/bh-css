@@ -1,5 +1,3 @@
-One day this will be dreamhost.css.
-
 ## Installation
 Make sure you have [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm) and [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) installed and then:
 
