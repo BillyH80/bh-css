@@ -1,10 +1,10 @@
 {
-  "name": "dreamhost-css",
-  "version": "0.3.17",
-  "description": "DreamHost's CSS framework",
+  "name": "bh-css",
+  "version": "0.0.1",
+  "description": "Personal-Use CSS Framework for Billy Han",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dreamhost/dreamhost.css.git"
+    "url": "https://github.com/BillyH80/bh-css.git"
   },
   "scripts": {
     "version": "gulp dist && git add -A"
