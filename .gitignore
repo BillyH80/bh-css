@@ -3,3 +3,4 @@
 /node_modules/
 /src/css/style.css
 *.DS_Store
+.vscode
