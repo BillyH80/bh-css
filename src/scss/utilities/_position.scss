@@ -1,0 +1,17 @@
+.pos-absolute {position: absolute !important}
+.pos-relative {position: relative !important}
+.pos-fixed {position: fixed !important}
+.pos-static {position: static !important}
+
+.pos-top {top: 0 !important}
+.pos-bottom {bottom: 0 !important}
+.pos-left {left: 0 !important}
+.pos-right {right: 0 !important}
+.pos-all {@extend .pos-top, .pos-bottom, .pos-left, .pos-right;}
+
+.z-0 { z-index: $z-0; }
+.z-1 { z-index: $z-1; }
+.z-2 { z-index: $z-2; }
+.z-3 { z-index: $z-3; }
+.z-4 { z-index: $z-4; }
+.z-5 { z-index: $z-5; }

@@ -1,0 +1,220 @@
+/*
+
+Color Utilities
+
+  These classes are used to define colors throughout the app.
+
+  - Background color classes, which use the .bg- prefix
+  - Text color classes, which use the .t- prefix
+ */
+
+//Background colors
+
+//blue
+.bg-b700 {background: $c-b700 !important}
+.bg-b500 {background: $c-b500 !important}
+.bg-b300 {background: $c-b300 !important}
+.bg-b100 {background: $c-b100 !important}
+
+//grey
+.bg-g500 {background: $c-g500 !important}
+.bg-g400 {background: $c-g400 !important}
+.bg-g300 {background: $c-g300 !important}
+.bg-g200 {background: $c-g200 !important}
+.bg-g100 {background: $c-g100 !important}
+
+//orange
+.bg-o500 {background: $c-o500 !important}
+.bg-o300 {background: $c-o300 !important}
+.bg-o100 {background: $c-o100 !important}
+
+//purple
+.bg-p300 {background: $c-p300 !important}
+
+//teal
+.bg-t500 {background: $c-t500 !important}
+.bg-t300 {background: $c-t300 !important}
+.bg-t100 {background: $c-t100 !important}
+
+//yellow
+.bg-y500 {background: $c-y500 !important}
+.bg-y300 {background: $c-y300 !important}
+.bg-y100 {background: $c-y100 !important}
+
+//red
+.bg-r500 {background: $c-r500 !important}
+.bg-r300 {background: $c-r300 !important}
+.bg-r100 {background: $c-r100 !important}
+
+//white
+.bg-w100 {background: $c-w100 !important}
+
+//Typography Colors
+
+// blue
+.t-b700 {color: $c-b700 !important}
+.t-b500 {color: $c-b500 !important}
+.t-b300 {color: $c-b300 !important}
+.t-b100 {color: $c-b100 !important}
+
+//grey
+.t-g500 {color: $c-g500 !important}
+.t-g400 {color: $c-g400 !important}
+.t-g300 {color: $c-g300 !important}
+.t-g200 {color: $c-g200 !important}
+.t-g100 {color: $c-g100 !important}
+
+//orange
+.t-o500 {color: $c-o500 !important}
+.t-o300 {color: $c-o300 !important}
+.t-o100 {color: $c-o100 !important}
+
+//purple
+.t-p300 {color: $c-p300 !important}
+
+//teal
+.t-t500 {color: $c-t500 !important}
+.t-t300 {color: $c-t300 !important}
+.t-t100 {color: $c-t100 !important}
+
+//yellow
+.t-y500 {color: $c-y500 !important}
+.t-y300 {color: $c-y300 !important}
+.t-y100 {color: $c-y100 !important}
+
+//red
+.t-r500 {color: $c-r500 !important}
+.t-r300 {color: $c-r300 !important}
+.t-r100 {color: $c-r100 !important}
+
+//white
+.t-w100 {color: $c-w100 !important}
+
+
+/*
+Background colors
+*/
+// Blue
+.bg-lightest-blue {background: $lightest-blue !important}
+.bg-lighter-blue {background: $lighter-blue !important}
+.bg-light-blue {background: $light-blue !important}
+.bg-blue {background: $blue !important}
+.bg-dark-blue {background: $dark-blue !important}
+.bg-darker-blue {background: $darker-blue !important}
+.bg-darkest-blue {background: $darkest-blue !important}
+
+// Teal
+.bg-lighter-teal {background: $lighter-teal !important}
+.bg-light-teal {background: $light-teal !important}
+.bg-teal {background: $teal !important}
+.bg-dark-teal {background: $dark-teal !important}
+.bg-darker-teal {background: $darker-teal !important}
+
+// Green
+.bg-lighter-green {background: $lighter-green !important}
+.bg-light-green {background: $light-green !important}
+.bg-green {background: $green !important}
+.bg-dark-green {background: $dark-green !important}
+.bg-darker-green {background: $darker-green !important}
+
+// Yellow
+.bg-lighter-yellow {background: $lighter-yellow !important}
+.bg-light-yellow {background: $light-yellow !important}
+.bg-yellow {background: $yellow !important}
+.bg-dark-yellow {background: $dark-yellow !important}
+.bg-darker-yellow {background: $darker-yellow !important}
+
+// Orange
+.bg-lighter-orange {background: $lighter-orange !important}
+.bg-light-orange {background: $light-orange !important}
+.bg-orange {background: $orange !important}
+.bg-dark-orange {background: $dark-orange !important}
+.bg-darker-orange {background: $darker-orange !important}
+
+// Red
+.bg-lighter-red {background: $lighter-red !important}
+.bg-light-red {background: $light-red !important}
+.bg-red {background: $red !important}
+.bg-dark-red {background: $dark-red !important}
+.bg-darker-red {background: $darker-red !important}
+
+// Salmon
+.bg-lighter-salmon {background: $lighter-salmon !important}
+.bg-light-salmon {background: $light-salmon !important}
+.bg-salmon {background: $salmon !important}
+.bg-dark-salmon {background: $dark-salmon !important}
+.bg-darker-salmon {background: $darker-salmon !important}
+
+// Grey
+.bg-white {background: #fff !important}
+.bg-lighter-grey {background: $lighter-grey !important}
+.bg-light-grey {background: $light-grey !important}
+.bg-grey {background: $grey !important}
+.bg-dark-grey {background: $dark-grey !important}
+.bg-darker-grey {background: $darker-grey !important}
+.bg-black {background: $black !important}
+.bg-transparent {background: transparent !important}
+
+
+/*
+Typography Colors
+*/
+// Blue
+.t-lightest-blue {color: $lightest-blue !important}
+.t-lighter-blue {color: $lighter-blue !important}
+.t-light-blue {color: $light-blue !important}
+.t-blue {color: $blue !important}
+.t-dark-blue {color: $dark-blue !important}
+.t-darker-blue {color: $darker-blue !important}
+.t-darkest-blue {color: $darkest-blue !important}
+
+// Teal
+.t-lighter-teal {color: $lighter-teal !important}
+.t-light-teal {color: $light-teal !important}
+.t-teal {color: $teal !important}
+.t-dark-teal {color: $dark-teal !important}
+.t-darker-teal {color: $darker-teal !important}
+
+// Green
+.t-lighter-green {color: $lighter-green !important}
+.t-light-green {color: $light-green !important}
+.t-green {color: $green !important}
+.t-dark-green {color: $dark-green !important}
+.t-darker-green {color: $darker-green !important}
+
+// Yellow
+.t-lighter-yellow {color: $lighter-yellow !important}
+.t-light-yellow {color: $light-yellow !important}
+.t-yellow {color: $yellow !important}
+.t-dark-yellow {color: $dark-yellow !important}
+.t-darker-yellow {color: $darker-yellow !important}
+
+// Orange
+.t-lighter-orange {color: $lighter-orange !important}
+.t-light-orange {color: $light-orange !important}
+.t-orange {color: $orange !important}
+.t-dark-orange {color: $dark-orange !important}
+.t-darker-orange {color: $darker-orange !important}
+
+// Red
+.t-lighter-red {color: $lighter-red !important}
+.t-light-red {color: $light-red !important}
+.t-red {color: $red !important}
+.t-dark-red {color: $dark-red !important}
+.t-darker-red {color: $darker-red !important}
+
+// Salmon
+.t-lighter-salmon {color: $lighter-salmon !important}
+.t-light-salmon {color: $light-salmon !important}
+.t-salmon {color: $salmon !important}
+.t-dark-salmon {color: $dark-salmon !important}
+.t-darker-salmon {color: $darker-salmon !important}
+
+// Grey
+.t-white {color: #fff !important}
+.t-lighter-grey {color: $lighter-grey !important}
+.t-light-grey {color: $light-grey !important}
+.t-grey {color: $grey !important}
+.t-dark-grey {color: $dark-grey !important}
+.t-darker-grey {color: $darker-grey !important}
+.t-black {color: $black !important}

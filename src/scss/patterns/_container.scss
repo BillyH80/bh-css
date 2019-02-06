@@ -1,0 +1,7 @@
+// Container Sizes
+.container-s { max-width: 640px; margin-left: auto; margin-right: auto; } // 320 x 2
+.container-m { max-width: 960px; margin-left: auto; margin-right: auto; } // 320 x 3
+.container-l { max-width: 1280px; margin-left: auto; margin-right: auto; } // 320 x 4
+
+.border-box {box-sizing: border-box !important}
+.content-box {box-sizing: content-box !important}

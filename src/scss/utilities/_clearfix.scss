@@ -1,0 +1,8 @@
+.u-cf,
+.u-clearfix {
+	&:after {
+		clear: both;
+		content: '';
+		display: table;
+	}
+}
