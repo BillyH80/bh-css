@@ -17,22 +17,22 @@ h1, h2, h3, h4{
 
 h1 {
 	font-size: $t-5;
-	margin-bottom: convertScaleToRem(4);
+	margin-bottom: 2rem;
 }
 
 h2 {
 	font-size: $t-4;
-	margin-bottom: convertScaleToRem(3);
+	margin-bottom: 1.5rem;
 }
 
 h3 {
 	font-size: $t-3;
-	margin-bottom: convertScaleToRem(3);
+	margin-bottom: 1.5rem;
 }
 
 h4 {
 	font-size: $t-2;
-	margin-bottom: convertScaleToRem(2);
+	margin-bottom: 1rem;
 }
 
 a {
@@ -62,12 +62,12 @@ img {
 	height: auto;
 }
 
-p, section, img {
-	margin-bottom: convertScaleToRem(2);
+p, section {
+	margin-bottom: 1rem;
 }
 
 hr {
-	margin: convertScaleToRem(4) 0;
+	margin: 2rem 0;
 	border: none;
 	border-bottom: 1px solid $gray-2;
 }

@@ -33,7 +33,7 @@ Form Component
 }
 
 .Form__group--actions {
-	margin-top: convertScaleToRem(6);
+	margin-top: 3rem;
 }
 
 .Form__group--stacked {
@@ -53,9 +53,9 @@ Form Component
 		content: '';
 		position: absolute;
 		pointer-events: none;
-		bottom: convertScaleToRem(2);
-		height: convertScaleToRem(1);
-		right: convertScaleToRem(2);
+		bottom: 1rem;
+		height: 0.5rem;
+		right: 1rem;
 		border-color: $gray-3 transparent;
 		border-style: solid;
 		border-width: .35rem .35rem 0 .35rem;
@@ -93,11 +93,11 @@ Form Component
 
 	display: block;
 	margin: 0;
-	margin-top: convertScaleToRem(1);
+	margin-top: 0.5rem;
 	width: 100%;
 	transition: all .2s ease-in-out;
 	border-radius: 3px;
-	padding: 0.4375rem convertScaleToRem(1); /* to ensure align with baseline grid. */
+	padding: 0.4375rem 0.5rem; /* to ensure align with baseline grid. */
 
 	&:active,
 	&:focus {
@@ -146,11 +146,11 @@ textarea.Input {
 	color: $gray-5;
 	font-size: $t-1;
 	font-family: $body;
-	margin-top: convertScaleToRem(1);
+	margin-top: 0.5rem;
 	border-radius: 3px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	padding: 0.4375rem convertScaleToRem(1);
+	padding: 0.4375rem 0.5rem;
 	background: $white;
 	display: block;
 	width: 100%;
@@ -179,7 +179,7 @@ textarea.Input {
 	display: block;
 	padding-left: 1.4rem;
 	position: relative;
-	margin-bottom: convertScaleToRem(1);
+	margin-bottom: 0.5rem;
 
 	&:hover input{
 		border-color: $blue-3;
@@ -266,7 +266,7 @@ textarea.Input {
 	color: $gray-5;
 	font-size: $t-1;
 	display: block;
-	margin-bottom: convertScaleToRem(2);
+	margin-bottom: 1rem;
 }
 
 .Choice--error > .Choice__label {
