@@ -44,8 +44,8 @@ $baseScale: 8; // Goes in 8px increments
 $maxSize: 16; // Build 16 increments, 128px
 
 // Responsive
-$medium-breakpoint: 750px;
-$large-breakpoint: 1050px;
+$breakpoint-md: 750px;
+$breakpoint-lg: 1050px;
 
 // Typography
 $body: 'Proxima Nova', sans-serif;

@@ -43,7 +43,7 @@
 .flex-grow-5 {flex-grow: 5}
 .flex-grow-6 {flex-grow: 6}
 
-@media screen and (min-width: $medium-breakpoint) {
+@media screen and (min-width: $breakpoint-md) {
 	.flex__m {display: flex !important}
 
 	.flex-row__m {flex-direction: row !important}
@@ -88,7 +88,7 @@
 	.flex-grow-11__m {flex-grow: 11}
 }
 
-@media screen and (min-width: $large-breakpoint){
+@media screen and (min-width: $breakpoint-lg){
 	.flex__l {display: flex !important}
 
 	.flex-row__l {flex-direction: row !important}

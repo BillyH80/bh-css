@@ -135,7 +135,7 @@ Table
 			}
 		}
 
-		@media (min-width: $medium-breakpoint) {
+		@media (min-width: $breakpoint-md) {
 			width: auto;
 		}
 	}
@@ -150,7 +150,7 @@ Table
 		padding-left: convertScaleToRem(1);
 	}
 
-	@media (min-width: $medium-breakpoint) {
+	@media (min-width: $breakpoint-md) {
 		thead {
 			display: table-header-group;
 		}

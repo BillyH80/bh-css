@@ -9,7 +9,7 @@
 .w-100 {width: 100% !important;}
 .w-auto {width: auto !important;}
 
-@media screen and (min-width: $medium-breakpoint){
+@media screen and (min-width: $breakpoint-md){
 	.w-0__m {width: 0 !important;}
 	.w-1__m {width: 1% !important;}
 	.w-25__m {width: 25% !important;}
@@ -22,7 +22,7 @@
 	.w-auto__m {width: auto !important;}
 }
 
-@media screen and (min-width: $large-breakpoint){
+@media screen and (min-width: $breakpoint-lg){
 	.w-0__l {width: 0 !important;}
 	.w-1__l {width: 1% !important;}
 	.w-25__l {width: 25% !important;}

@@ -12,7 +12,7 @@
 	padding-right: 0;
 }
 
-@media (min-width: 750px) {
+@media (min-width: $breakpoint-md) {
 	.grid {
 		padding-left: 16px;
 		padding-right: 16px;
@@ -27,7 +27,7 @@
 	flex: 100%;
 }
 
-@media (min-width: 750px) {
+@media (min-width: $breakpoint-md) {
 	[class*="col"]:not(.grid):not(.row) {
 		padding-left: 8px;
 		padding-right: 8px;
@@ -755,7 +755,7 @@
 	}
 }
 
-@media (min-width: 1050px) {
+@media (min-width: $breakpoint-lg) {
 	[class*="col"]:not(.grid):not(.row) {
 		padding-left: 8px;
 		padding-right: 8px;
