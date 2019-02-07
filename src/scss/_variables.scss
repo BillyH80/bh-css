@@ -1,106 +1,42 @@
-// Colours
+// Backgrounds
+$white: #ffffff; //white
 
-//Backgrounds
-$c-b700: #071c26; //midnight
-$c-w100: #ffffff; //white
+// Grayscale
+$black: #000000; //black
+$gray-5: #434F58; //metal
+$gray-4: #677983; //galactic
+$gray-3: #AFBFC9; //cloudy
+$gray-2: #E0E4E8; //smoke
+$gray-1: #F4F6F9; //offwhite
 
-//Grayscale
-$c-black: #000000; //black
-$c-g500: #434F58; //metal
-$c-g400: #677983; //galactic
-$c-g300: #AFBFC9; //cloudy
-$c-g200: #E0E4E8; //smoke
-$c-g100: #F4F6F9; //offwhite
+// Primary Accent
+$blue-7: #071c26; //midnight
+$blue-5: #1176A5; //royalblue
+$blue-3: #0073EC; //azure
+$blue-1: #CCEFFF; //babyblue
 
-//Primary Accent
-$c-b500: #1176A5; //royalblue
-$c-b300: #0073EC; //azure
-$c-b100: #CCEFFF; //babyblue
-
-//Purple Accent
-$c-p300: #A644E5; //prince
+// Purple Accent
+$purple-3: #A644E5; //prince
 
 // Checkout Accent
-$c-o500: #664200; //autumn
-$c-o300: #F59D00; //tangerine
-$c-o100: #FFE0A6; //peach
+$orange-5: #664200; //autumn
+$orange-3: #F59D00; //tangerine
+$orange-1: #FFE0A6; //peach
 
 // Positive Accent
-$c-t500: #0D8288; //marina
-$c-t300: #00CAAA; //turtle
-$c-t100: #E5FEFF; //ice
+$teal-5: #0D8288; //marina
+$teal-3: #00CAAA; //turtle
+$teal-1: #E5FEFF; //ice
 
 // Neutral Accent
-$c-y500: #6F5F1B; //leather
-$c-y300: #FFDA00; //sunflower
-$c-y100: #FFF4B6; //magnolia
+$yellow-5: #6F5F1B; //leather
+$yellow-3: #FFDA00; //sunflower
+$yellow-1: #FFF4B6; //magnolia
 
 // Negative Accent
-$c-r500: #4F0703; //rust
-$c-r300: #FF4A48; //coral
-$c-r100: #FFCCCE; //rose
-
-// Brand Colors
-
-// Blues
-$lightest-blue: #EEFAFF;
-$lighter-blue: #CCEFFF;
-$light-blue: #80CDF0;
-$blue: #2BADE9;
-$dark-blue: #1176A5;
-$darker-blue: #073F59;
-$darkest-blue: #061C26;
-
-// Teal
-$lighter-teal: #E5FEFF;
-$light-teal: #5CB4B9;
-$teal: #109CA3;
-$dark-teal: #0D8288;
-$darker-teal: #064145;
-
-// Green
-$lighter-green: #EEFDF1;
-$light-green: #B0DBB9;
-$green: #027F1B;
-$dark-green: #074C15;
-$darker-green: #072C0E;
-
-// Yellow
-$lighter-yellow: #FFF9CC;
-$light-yellow: #F4E171;
-$yellow: #FFDA00;
-$dark-yellow: #C7A900;
-$darker-yellow: #837000;
-
-// Orange
-$lighter-orange: #FFEECC;
-$light-orange: #FFCA63;
-$orange: #FFA700;
-$dark-orange: #D78B00;
-$darker-orange: #8A5900;
-
-// Red
-$lighter-red: #FFD6D4;
-$light-red: #D45F59;
-$red: #B80C03;
-$dark-red: #8C0700;
-$darker-red: #590400;
-
-// Salmon
-$lighter-salmon: #FFCCCE;
-$light-salmon: #FC9A95;
-$salmon: #F36058;
-$dark-salmon: #C04740;
-$darker-salmon: #853834;
-
-// Greys
-$white: #fff;
-$lighter-grey: #F4F6F9;
-$light-grey: #E0E4E8;
-$grey: #AFBFCA;
-$dark-grey: #5E6D78;
-$darker-grey: #434F58;
-$black: #000000;
+$red-5: #4F0703; //rust
+$red-3: #FF4A48; //coral
+$red-1: #FFCCCE; //rose
 
 // Sizing Scale
 // Use baseScale with convertScaleToRem() to ensure consistent margins.

@@ -35,14 +35,14 @@ Table
 	text-align: left;
 
 	thead {
-		border-bottom: 2px solid $c-g500;
+		border-bottom: 2px solid $gray-5;
 	}
 
 	th {
 		padding: convertScaleToRem(2) convertScaleToRem(1);
 		font-size: $t-1;
 		font-family: $heading;
-		color: $c-black;
+		color: $black;
 		text-transform: uppercase;
 	}
 
@@ -55,7 +55,7 @@ Table
 // Default
 .Table {
 	tbody tr:last-child {
-		border-bottom: 1px solid $c-g200;
+		border-bottom: 1px solid $gray-2;
 	}
 
 	td {
@@ -65,8 +65,8 @@ Table
 	}
 
 	.Table__row {
-		border-bottom: 1px solid $c-g200;
-		border-top: 1px solid $c-g200;
+		border-bottom: 1px solid $gray-2;
+		border-top: 1px solid $gray-2;
 	}
 
 	.Table__row--parent {
@@ -74,7 +74,7 @@ Table
 	}
 
 	.Table__row--child {
-		background-image: linear-gradient(to right, $c-g300 20%, rgba(255, 255, 255, 0) 0);
+		background-image: linear-gradient(to right, $gray-3 20%, rgba(255, 255, 255, 0) 0);
 		background-position: top;
 		background-size: 5px 1px;
 		background-repeat: repeat-x;
@@ -83,8 +83,8 @@ Table
 
 // Zebra stripes
 .Table--striped {
-	tbody tr:nth-child(odd) {background: $c-w100;}
-	tbody tr:nth-child(even) {background: $c-g100;}
+	tbody tr:nth-child(odd) {background: $white;}
+	tbody tr:nth-child(even) {background: $gray-1;}
 }
 
 // Mobile
@@ -96,8 +96,8 @@ Table
 	tbody tr {
 		display: block;
 		margin-bottom: convertScaleToRem(7);
-		background: $c-g100;
-		border: 1px solid $c-g200;
+		background: $gray-1;
+		border: 1px solid $gray-2;
 		border-radius: 5px;
 		padding: convertScaleToRem(4) convertScaleToRem(4) convertScaleToRem(1);
 
@@ -184,13 +184,13 @@ Table
 			}
 
 			&:last-child {
-				border-bottom: 1px solid $c-g200;
+				border-bottom: 1px solid $gray-2;
 			}
 		}
 
 		.Table__row {
-			border-bottom: 1px solid $c-g200;
-			border-top: 1px solid $c-g200;
+			border-bottom: 1px solid $gray-2;
+			border-top: 1px solid $gray-2;
 		}
 
 		.Table__row--parent {
@@ -198,7 +198,7 @@ Table
 		}
 
 		.Table__row--child {
-			background-image: linear-gradient(to right, $c-g300 20%, rgba(255, 255, 255, 0) 0);
+			background-image: linear-gradient(to right, $gray-3 20%, rgba(255, 255, 255, 0) 0);
 			background-position: top;
 			background-size: 5px 1px;
 			background-repeat: repeat-x;
@@ -213,7 +213,7 @@ Table
 // Condensed
 .Table--condensed {
 	thead {
-		border-bottom: 1px solid $c-g300;
+		border-bottom: 1px solid $gray-3;
 	}
 
 	th, tbody tr td {
@@ -222,6 +222,6 @@ Table
 
 	tbody tr,
 	tbody tr:last-child {
-		border-bottom: 1px solid $c-g200;
+		border-bottom: 1px solid $gray-2;
 	}
 }

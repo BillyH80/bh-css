@@ -56,19 +56,19 @@ Form Component
 		bottom: convertScaleToRem(2);
 		height: convertScaleToRem(1);
 		right: convertScaleToRem(2);
-		border-color: $c-g300 transparent;
+		border-color: $gray-3 transparent;
 		border-style: solid;
 		border-width: .35rem .35rem 0 .35rem;
 		transition: all .2s ease-in-out;
 	}
 
 	&:hover:after {
-		border-color: $c-g400 transparent;
+		border-color: $gray-4 transparent;
 	}
 }
 
 .Form__label {
-	color: $c-g500;
+	color: $gray-5;
 	display: block;
 	font-size: $t-1;
 	font-weight: $t-bold;
@@ -77,7 +77,7 @@ Form Component
 }
 
 .Form__description {
-	color: $c-g500;
+	color: $gray-5;
 	font-size: $t-1;
 	font-weight: $t-regular;
 	margin-bottom: 0;
@@ -85,9 +85,9 @@ Form Component
 
 // Inputs
 .Input {
-	border: 1px solid $c-g300;
+	border: 1px solid $gray-3;
 	outline: none;
-	color: $c-g500;
+	color: $gray-5;
 	font-size: $t-1;
 	font-family: $body;
 
@@ -101,7 +101,7 @@ Form Component
 
 	&:active,
 	&:focus {
-		box-shadow: 0 0 5px 0 $c-g300;
+		box-shadow: 0 0 5px 0 $gray-3;
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			color: $white;
 		}
@@ -117,14 +117,14 @@ Form Component
 	}
 
 	&::placeholder {
-		color: $c-g500;
+		color: $gray-5;
 	}
 }
 
 .Input--error,
 .Input--error:hover,
 .Input--error:focus {
-	border-color: $red;
+	border-color: $red-3;
 }
 
 .Form__label > .Form__description {
@@ -141,9 +141,9 @@ textarea.Input {
 // This looks kinda crazy in Safari. Looks decent elsewhere though.
 // This is the only way to get a native select box to stay at a height though.
 .Select {
-	border: 1px solid $c-g300;
+	border: 1px solid $gray-3;
 	outline: none;
-	color: $c-g500;
+	color: $gray-5;
 	font-size: $t-1;
 	font-family: $body;
 	margin-top: convertScaleToRem(1);
@@ -159,20 +159,20 @@ textarea.Input {
 
 	&:hover,
 	&:focus {
-		background: $c-g100;
+		background: $gray-1;
 	}
 }
 
 .Select--error,
 .Select--error:hover,
 .Select--error:focus {
-	border-color: $c-r300;
+	border-color: $red-3;
 }
 
 
 // Choice: styles both radios and checkboxes
 .Choice {
-	color: $c-g500;
+	color: $gray-5;
 	font-size: $t-1;
 	font-family: $body;
 	cursor: pointer;
@@ -182,7 +182,7 @@ textarea.Input {
 	margin-bottom: convertScaleToRem(1);
 
 	&:hover input{
-		border-color: $c-b300;
+		border-color: $blue-3;
 	}
 
 	input {
@@ -194,8 +194,8 @@ textarea.Input {
 		position: absolute;
 		left: 0;
 		top: 3px;
-		border:solid $c-g300 1px;
-		background: $c-w100;
+		border:solid $gray-3 1px;
+		background: $white;
 		padding: 7px;
 		margin: 0;
 
@@ -204,12 +204,12 @@ textarea.Input {
 		}
 
 		&:checked{
-			border-color: $c-b300;
+			border-color: $blue-3;
 		}
 
 		&:before{
 			content:'';
-			background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M10.4%2018.8l14-15.4c1.7-1.8%204.5-1.9%206.3-.1%201.7%201.7%201.8%204.5.2%206.3L14.3%2027.9c-1.3%202.1-4%202.8-6.1%201.4-.4-.3-.8-.6-1.1-1l-5.8-6c-1.7-1.8-1.6-4.7.1-6.5%201.7-1.7%204.4-1.7%206.2%200l2.8%203z%22%20fill%3D%22#{$c-b300}%22%20%2F%3E%3C%2Fsvg%3E');
+			background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M10.4%2018.8l14-15.4c1.7-1.8%204.5-1.9%206.3-.1%201.7%201.7%201.8%204.5.2%206.3L14.3%2027.9c-1.3%202.1-4%202.8-6.1%201.4-.4-.3-.8-.6-1.1-1l-5.8-6c-1.7-1.8-1.6-4.7.1-6.5%201.7-1.7%204.4-1.7%206.2%200l2.8%203z%22%20fill%3D%22#{$blue-3}%22%20%2F%3E%3C%2Fsvg%3E');
 			opacity: 0;
 			position: absolute;
 			top: 1px;
@@ -233,7 +233,7 @@ textarea.Input {
 		&:before{
 			animation: none;
 			transition: all $tr-5 ease-in-out;
-			background: $c-b300;
+			background: $blue-3;
 			position: absolute;
 			top: 3px;
 			left: 3px;
@@ -249,7 +249,7 @@ textarea.Input {
 		}
 
 		&:checked{
-			border-color:$c-b500;
+			border-color:$blue-5;
 		}
 
 		&:checked:before{
@@ -263,12 +263,12 @@ textarea.Input {
 }
 
 .Choice__description {
-	color: $c-g500;
+	color: $gray-5;
 	font-size: $t-1;
 	display: block;
 	margin-bottom: convertScaleToRem(2);
 }
 
 .Choice--error > .Choice__label {
-	color: $red;
+	color: $red-3;
 }

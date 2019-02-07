@@ -60,7 +60,7 @@ Popover Component
 
 .Popover,
 .Popover.has-caret:after {
-	background: $c-w100;
+	background: $white;
 	color: $black;
 	transition-duration: $tr-4;
 	transition-timing-function: ease-in-out;
@@ -112,36 +112,36 @@ Popover Component
 	&.Popover--dark {
 		&,
 		& a {
-			color: $c-w100;
+			color: $white;
 		}
 
 		&,
 		&.has-caret:after {
-			background: $c-b700;
+			background: $blue-7;
 		}
 	}
 
 	&.Popover--error {
 		&,
 		& a {
-			color: $c-w100;
+			color: $white;
 		}
 
 		&,
 		&.has-caret:after {
-			background: $c-r300;
+			background: $red-3;
 		}
 	}
 
 	&.Popover--success{
 		&,
 		& a {
-			color: $c-w100;
+			color: $white;
 		}
 
 		&,
 		&.has-caret:after {
-			background: $c-t500;
+			background: $teal-5;
 		}
 	}
 }
@@ -388,10 +388,10 @@ Popover Component
 .Popover__section {
 	// Separator classes
 	&--separator {
-		border-top: 1px solid darken($c-g200, 5%);
+		border-top: 1px solid darken($gray-2, 5%);
 
 		.Popover--dark & {
-			border-color: darken($c-g500, 5%);
+			border-color: darken($gray-5, 5%);
 		}
 	}
 

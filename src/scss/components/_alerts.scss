@@ -16,18 +16,18 @@
 }
 
 .Alert--success {
-	background: $c-t100;
-	border-left: convertScaleToRem(1) solid $c-t300;
+	background: $teal-1;
+	border-left: convertScaleToRem(1) solid $teal-3;
 }
 
 .Alert--error {
-	background: $c-r100;
-	border-left: convertScaleToRem(1) solid $c-r300;
+	background: $red-1;
+	border-left: convertScaleToRem(1) solid $red-3;
 }
 
 .Alert:not(.Alert--success):not(.Alert--error) {
-	background: $c-y100;
-	border-left: convertScaleToRem(1) solid $c-y300;
+	background: $yellow-1;
+	border-left: convertScaleToRem(1) solid $yellow-3;
 }
 
 .Alert--compact{
@@ -75,5 +75,5 @@
 	font-size: $t-1;
 	display: block;
 	margin-bottom: 0.5em;
-	color: $c-g300;
+	color: $gray-3;
 }

@@ -4,7 +4,7 @@
 
 
 .Tabs__nav {
-	border-bottom: solid 1px $c-g200;
+	border-bottom: solid 1px $gray-2;
 	font-size: 0; // allow inline horizontal collapse
 	overflow-x: auto;
 	white-space: nowrap;
@@ -16,18 +16,18 @@
 	padding: 0 0 1rem 0;
 	font-size: $t-1;
 	font-weight: $t-bold;
-	color: $c-g400;
+	color: $gray-4;
 	display: inline-block;
 	position: relative;
 	user-select: none;
 
 	a {
 		display: block;
-		color: $c-g400;
+		color: $gray-4;
 
 		&:hover {
 			text-decoration: none;
-			color: $c-b700;
+			color: $blue-7;
 		}
 	}
 
@@ -39,14 +39,14 @@
 		left: 0;
 		right: 100%;
 		bottom: 0;
-		background: $c-b300;
+		background: $blue-3;
 		height: 2px;
 		transition: right $tr-4 ease-out;
 	}
 
 	&:hover, &:active, &.is-active a {
 		text-decoration: none;
-		color: $c-b700;
+		color: $blue-7;
 	}
 
 	&:first-child {
@@ -60,7 +60,7 @@
 			color: currentcolor;
 		}
 		font-weight: $t-bold;
-		color: $c-b700;
+		color: $blue-7;
 		&:after {
 			right:0%;
 		}
@@ -80,7 +80,7 @@
 		flex-grow: 1;
 		text-align: center;
 		margin: 0;
-		border-bottom: solid 1px $c-g300;
+		border-bottom: solid 1px $gray-3;
 		min-width: 75px;
 	}
 }
@@ -96,7 +96,7 @@
 
 	.Tabs__nav-item {
 		display: block;
-		border: solid 1px $c-g200;
+		border: solid 1px $gray-2;
 		border-bottom: none;
 		margin: 0;
 		padding: convertScaleToRem(1.5) convertScaleToRem(2);
@@ -111,18 +111,18 @@
 
 		&:last-of-type {
 			border-radius: 0 0 3px 3px;
-			border-bottom: solid 1px $c-g200;
+			border-bottom: solid 1px $gray-2;
 		}
 
 		&.is-active {
-			border-color: $c-b300;
-			background: $c-b300;
-			color: $c-w100;
+			border-color: $blue-3;
+			background: $blue-3;
+			color: $white;
 			font-weight: $t-regular;
 		}
 
 		&.is-active:hover {
-			color: $c-w100;
+			color: $white;
 		}
 	}
 
@@ -130,19 +130,19 @@
 
 		.Tabs__nav-item {
 			display: inline-block;
-			border: solid 1px $c-g200;
+			border: solid 1px $gray-2;
 			border-right: none;
 			margin: 0;
 			font-weight: $t-regular;
 
 			&:first-of-type {
 				border-radius: 3px 0 0 3px;
-				border-left: solid 1px $c-g200;
+				border-left: solid 1px $gray-2;
 			}
 
 			&:last-of-type {
 				border-radius: 0 3px 3px 0;
-				border-right: solid 1px $c-g200;
+				border-right: solid 1px $gray-2;
 			}
 
 		}
