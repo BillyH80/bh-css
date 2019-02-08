@@ -1,53 +1,20 @@
-/*
-
-Buttons
-
-	Can be used with anchor or button tags.
-
-	Usage
-	.Button                 - Default
-	.Button--primary        - Primary
-	.Button--danger         - Danger!
-	.Button--disabled       - Disabled
-
-	Colors
-	.Button--dark           - Dark color
-	.Button--light          -Light color
-
-	Shapes
-	.Button                 - Default shape
-	.Button--text           - Underlined text
-
-	Sizes
-	.Button                 - Default size
-	.Button--hero           - Hero size
-	.Button--compact        - Compact size
-
-	Markup
-	<a href="#" class="Button {{modifier_class}}" data-label="label">Text</a>
-
-	Styleguide Base.Buttons
-
-*/
-
 .Button {
 	font-family: $body;
-	color: $blue-3;
+	color: $blue-7;
 	background: transparent;
-	border: solid 1px $blue-3;
-	border-radius: 3px;
+	border: solid 1px $gray-3;
+	border-radius: 2px;
 	display: inline-block;
-	font-size: $t-1;
+	font-size: $t-0;
 	line-height: 1;
 	padding: 0.75rem 2rem 0.625rem;
 	margin: 0;
-	text-align: center;
 	text-decoration: none;
-	font-weight: $t-bold;
+	font-weight: $t-medium;
 	text-shadow: none;
-	vertical-align: baseline;
 	outline: none;
-	transition: all $tr-4 ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-transform: uppercase;
 
 	// Allow buttons to work on elements that aren't <a>
 	cursor: pointer;
@@ -60,9 +27,8 @@ Buttons
 	&:hover,
 	&:active,
 	&.is-open {
-		color: darken($blue-3, 20%);
 		text-decoration: none;
-		border-color: darken($blue-3, 10%);
+		border-color: darken($gray-3, 10%);
 		box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1 );
 	}
 
@@ -78,36 +44,34 @@ Buttons
 
 // Colors
 .Button--primary {
-	background: $blue-3;
+	background: $blue-7;
 	color: $white;
-	border: solid 1px $blue-3;
+	border: solid 1px $blue-7;
 
 	&:hover, &:active, &.is-open {
 		color: $white;
-		background: darken($blue-3, 10%);
-		border-color: $blue-3;
+		background: lighten($blue-7, 10%);
+		border-color: $blue-7;
 	}
 }
 
-.Button--light{
+.Button--outline-light {
 	border-color: $white;
 	color: $white;
 
 	&:hover, &:active, &.is-open {
 		color: $blue-7;
 		background: $white;
-		border-color: $white;
 	}
 }
 
-.Button--dark{
+.Button--outline-dark {
 	border-color: $blue-7;
 	color: $blue-7;
 
 	&:hover, &:active, &.is-open {
 		color: $white;
 		background: $blue-7;
-		border-color: $blue-7;
 	}
 }
 
@@ -121,9 +85,6 @@ Buttons
 		background: $red-3;
 		border-color: $red-3;
 		color: $red-5; }
-
-	&.Button--text { color: $red-3; background: transparent; }
-	&.Button--text:hover { color: darken($red-3, 10%); background: transparent; }
 }
 
 // Compact
@@ -159,16 +120,16 @@ Buttons
 
 // Text
 .Button--text {
-	background: transparent;
-	border: none;
+	font-size: $t-1;
+	border: 0;
 	position: relative;
 	color: $blue-3;
+	text-transform: none;
 	text-decoration: none;
 	padding: 0;
 
 	&:hover, &:active, &.is-open {
-		border: none;
-		background: transparent;
+		border: 0;
 		box-shadow: none;
 		color: darken($blue-3, 10%);
 		transform: scale($s-3);
@@ -178,18 +139,18 @@ Buttons
 }
 
 .Button--text:before {
-	content: "";
+	content: '';
 	position: absolute;
 	z-index: $z-0;
 	left: 0;
 	right: 100%;
-	bottom: 0;
+	bottom: -4px;
 	background: currentColor;
-	height: 1px;
+	height: 3px;
 
-	transition: right $tr-4 ease-out;
+	transition: right 0.15s ease-in-out;
 }
 
 .Button--text:hover:before {
-	right:0%;
+	right: 0%;
 }
