@@ -15,7 +15,7 @@ These are simplistic utility classes, typically used to handle one CSS rule. (Al
 
 These are the starting 'building blocks' for designing. If things start getting more elaborate and/or you find yourself reusing a set pattern of utilites quite often, it might be time to create a custom `_component`
 
-Note: All utilities should use the `!IMPORTANT` declaration, as these rules should take priority over others.
+All utilities should use the `!IMPORTANT` declaration, as these rules should take priority over others.
 
 
 ## Functions
@@ -23,11 +23,11 @@ These are basically more complex utilities, only for cases where merely having i
 
 A good example is a grid system. There are numerous classes and rules that need to be applied, so it's more than a utility, but it also can't be a standalone and fleshed-out component on its own, so it's not a component, either.
 
-#### Note about the grid system
-The grid system was created using https://grid-wiz.now.sh/ with syntax that is based on bootstrap grid. Yes, this is a syntactical anomaly versus the rest of the framework. But it's a good grid. So good, in fact, that if you're not using it, everyone else you're working with will ask 'Why don't we just use bootstrap?' when really it's such a good and simple grid system that people are willing to put up with the rest of it.
+#### Note about the grid system:
+The grid system was created using https://grid-wiz.now.sh/ with syntax that is based on bootstrap grid. Yes, this is a syntactical anomaly versus the rest of the framework. But it's a good grid. So good, in fact, that if you're not using it, everyone else you're working with will ask 'Why don't we just use bootstrap?' when they really just want mainly the grid, which is so good that they're willing to include the entire rest of the library and end up using 20% of it.
 
 
 ## Custom Components
 These are fully built out and designed components which, ideally, are intended to be reused at some point. The complexity of a component is likely such that the HTML would be a bloated mess if only utilities were used to hack it together. And also, it would simply be unrealistic to expect that a single CSS framework can handle everything without any custom code. So this is where custom things go.
 
-Note: All components use the naming convention of capitalizing the first letter and also using BEM notation.
+All components use the naming convention of capitalizing the first letter and also using BEM notation.
