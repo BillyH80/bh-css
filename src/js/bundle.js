@@ -1,11 +1,11 @@
 /**
- * DreamHost.css Custom Javascript
+ * Custom Javascript
  *
  * Usage:
- * - Use the `dh_css` namespace to make sure custom JS doesn't ram into anything else!
+ * - Use the `bh` namespace to make sure custom JS doesn't ram into anything else!
  * - For components, create a new `var Component_name` in the namespace below
  * - Use a `.load()` method with an exit condition to improve performance
- * - Put all jQuery events in a separate `.events` method
+ * - Put all events in a separate `.events` method
  * - Call the `Component.load()` function in `dh_css.init`
  * - Comments also added inline in Accordion component for demo
  *
@@ -13,6 +13,7 @@
  * Just follow one of the vars someone else wrote, or just ask someone!
  *
 **/
+
 (function(bh) {
 
 	// Place all component loaders in here
