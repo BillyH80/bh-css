@@ -1,9 +1,12 @@
-## Installation
-Make sure you have [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm) and [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) installed and then:
+# BH CSS Library
 
-1. `npm install`
-2. `gulp`
+## How It Works
+This is my personal CSS framework. It mixes atomic and component-based CSS framework principles, using a core, minimal set of CSS functions and utilities which are then intended for use with unique components/patterns to custom tailor the framework to any project.
 
-The BrowserSync server will be running at `http://localhost:9999`. See gulpfile.js for more details.
+Here is an overview of organization and best practices for the various tools:
 
-The initial documentation can be found at `http://localhost:9999/docs/`.
+## Base
+This is where all default styling components are kept. Values in the _defaults and _variables can be tweaked for easy customization.
+
+### Note about mixins:
+I don't have a dedicated _mixins file.
