@@ -9,10 +9,9 @@ body {
 	line-height: 1.4;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
 	font-family: $heading;
 	font-weight: $t-medium;
-	color: $gray-5;
 }
 
 h1 {
@@ -49,7 +48,7 @@ a {
 	}
 }
 
-small{
+small {
 	font-size: $t-0;
 }
 
