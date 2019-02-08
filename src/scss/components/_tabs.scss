@@ -4,16 +4,16 @@
 
 
 .Tabs__nav {
-	border-bottom: solid 1px $gray-2;
 	font-size: 0; // allow inline horizontal collapse
 	overflow-x: auto;
 	white-space: nowrap;
+	padding-bottom: 1.5rem;
 }
 
 .Tabs__nav-item {
 	cursor: pointer;
 	margin: 0 1rem;
-	padding: 0 0 1rem 0;
+	padding: 0 0 0.5rem 0;
 	font-size: $t-1;
 	font-weight: $t-bold;
 	color: $gray-4;
@@ -24,29 +24,19 @@
 	a {
 		display: block;
 		color: $gray-4;
-
-		&:hover {
-			text-decoration: none;
-			color: $blue-7;
-		}
 	}
 
 	transition: right 0.2s ease-out;
 
 	&:after {
-		content: "";
+		content: '';
 		position: absolute;
 		left: 0;
 		right: 100%;
 		bottom: 0;
 		background: $blue-3;
-		height: 2px;
+		height: 3px;
 		transition: right 0.2s ease-out;
-	}
-
-	&:hover, &:active, &.is-active a {
-		text-decoration: none;
-		color: $blue-7;
 	}
 
 	&:first-child {
@@ -57,10 +47,10 @@
 	&.is-active {
 		&:hover {
 			cursor: default;
-			color: currentcolor;
+			color: $gray-5;
 		}
 		font-weight: $t-bold;
-		color: $blue-7;
+		color: $gray-5;
 		&:after {
 			right:0%;
 		}
