@@ -1,5 +1,7 @@
 # BH CSS Library
-This is my personal CSS framework. It mixes atomic and component-based CSS framework principles, using a core, minimal set of CSS functions and utilities which are then intended for use with unique components/patterns to custom tailor the framework to any project.
+This is my CSS framework that I use for personal projects.
+
+It mixes atomic and component-based CSS principles, using a core, minimal set of CSS functions and utilities which can then be custom-tailored to a project with unique components/patterns.
 
 Here is an overview of organization and best practices for the various tools:
 
@@ -7,7 +9,7 @@ Here is an overview of organization and best practices for the various tools:
 This is where all default styling components are kept. Values in the `_defaults` and `_variables` can be tweaked for easy customization.
 
 #### Note about mixins:
-I don't have a dedicated `_mixins` file. I don't really like mixins. They're handy, sure, but too often they turn into 'Hey, look how cool, elaborate, and unreadable of a mixin I can make.' And then they're used like once.
+I don't have a dedicated `_mixins` file. I don't really like mixins. They're handy, sure, but too often they turn into 'Hey, look how cool, elaborate, and unreadable of a mixin I can make.' And then they're used like once. I personally favor readability/accessibility over confusing people while attempting to look cool.
 
 
 ## Utilities
