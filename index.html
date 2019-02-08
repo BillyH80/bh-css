@@ -9,13 +9,10 @@
 	<div class="l-border-box p-2 p-5__m">
 		<div class="container-l">
 			<h1>BH CSS</h1>
-			<div class="grid">
+			<div class="grid m-bottom-6">
 				<div class="row">
 					<div class="col-md-4 m-top-2 m-top-0__m">
-						<div class="p-2 border border-gray-2 border-radius">
-							<p>Boop</p>
-							<button class="Button Button--text">Boop</button>
-						</div>
+						<div class="p-2 border border-gray-2 border-radius">Boop</div>
 					</div>
 					<div class="col-md-4 m-top-2 m-top-0__m">
 						<div class="p-2 border border-gray-2 border-radius">Boop</div>
@@ -25,7 +22,21 @@
 					</div>
 				</div>
 			</div>
+			<section class="Tabs">
+				<ul class="Tabs__nav">
+					<li class="Tabs__nav-item is-active" data-tab="1">Tab 1</li>
+					<li class="Tabs__nav-item" data-tab="2">Tab 2</li>
+				</ul>
+				<div class="Tab is-active m-y-3" data-tab="1">
+					<p>Tab 1</p>
+				</div>
+				<div class="Tab m-y-3" data-tab="2">
+					<p>Tab 2</p>
+				</div>
+			</section>
+
 		</div>
 	</div>
+	<script src="./src/js/bundle.js"></script>
 </body>
 </html>
