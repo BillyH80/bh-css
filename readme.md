@@ -1,7 +1,7 @@
 # BH CSS Library
 This is my CSS framework that I use for personal projects.
 
-It mixes atomic and component-based CSS principles, using a core, minimal set of CSS functions and utilities which can then be custom-tailored to a project with unique components/patterns.
+It mixes atomic and component-based CSS principles. It starts with a core, minimal set of CSS functions and utilities, which are intended to be supplemented with custom components/patterns unique to particular projects.
 
 Here is an overview of organization and best practices for the various tools:
 
