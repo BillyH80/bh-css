@@ -6,7 +6,7 @@ Here is an overview of organization and best practices for the various tools:
 ## Base
 This is where all default styling components are kept. Values in the `_defaults` and `_variables` can be tweaked for easy customization.
 
-### Note about mixins:
+#### Note about mixins:
 I don't have a dedicated `_mixins` file. I don't really like mixins. They're handy, sure, but too often they turn into 'Hey, look how cool, elaborate, and unreadable of a mixin I can make.' And then they're used like once.
 
 
@@ -23,7 +23,7 @@ These are basically more complex utilities, only for cases where merely having i
 
 A good example is a grid system. There are numerous classes and rules that need to be applied, so it's more than a utility, but it also can't be a standalone and fleshed-out component on its own, so it's not a component, either.
 
-### Note about the grid system
+#### Note about the grid system
 The grid system was created using https://grid-wiz.now.sh/ with syntax that is based on bootstrap grid. Yes, this is a syntactical anomaly versus the rest of the framework. But it's a good grid. So good, in fact, that if you're not using it, everyone else you're working with will ask 'Why don't we just use bootstrap?' when really it's such a good and simple grid system that people are willing to put up with the rest of it.
 
 
