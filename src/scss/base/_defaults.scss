@@ -4,13 +4,13 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-feature-settings: "liga", "dlig";
 	color: $gray-4;
-	font-family: $body;
+	font-family: $t-body;
 	font-size: $t-1; //16px
 	line-height: 1.4;
 }
 
 h1, h2, h3, h4 {
-	font-family: $heading;
+	font-family: $t-heading;
 	font-weight: $t-medium;
 }
 

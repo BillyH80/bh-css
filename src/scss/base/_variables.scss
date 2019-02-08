@@ -47,9 +47,9 @@ $breakpoint-md: 750px;
 $breakpoint-lg: 1050px;
 
 // Typography
-$body: 'Gotham', sans-serif;
-$heading: 'Gotham', sans-serif;
-$mono: monospace;
+$t-body: 'Gotham', sans-serif;
+$t-heading: 'Gotham', sans-serif;
+$t-mono: monospace;
 
 //Sizes
 $t-6: 2.5rem; // 40px
@@ -71,20 +71,6 @@ $t-extrabold: 900;
 // Border size
 $border-size-1: 1px;
 $border-size-2: 2px;
-
-// Transition Duration
-$tr-5: .3s;
-$tr-4: .2s;
-$tr-3: .1s;
-$tr-2: .07s;
-$tr-1: .05s;
-
-// Transform Scale
-$s-5: 1.02; //magnify
-$s-4: 1.01; //magnify less
-$s-3: 1; //initial
-$s-2: .99; //shrink less
-$s-1: .98; //shrink
 
 // Z-indexes
 $z-0: -1;

@@ -1,11 +1,11 @@
 /**
- * DreamHost.css Custom Javascript
+ * Custom Javascript
  *
  * Usage:
- * - Use the `dh_css` namespace to make sure custom JS doesn't ram into anything else!
+ * - Use the `bh` namespace to make sure custom JS doesn't ram into anything else!
  * - For components, create a new `var Component_name` in the namespace below
  * - Use a `.load()` method with an exit condition to improve performance
- * - Put all jQuery events in a separate `.events` method
+ * - Put all events in a separate `.events` method
  * - Call the `Component.load()` function in `dh_css.init`
  * - Comments also added inline in Accordion component for demo
  *
@@ -14,74 +14,50 @@
  *
 **/
 
-(function(dh_css, $) {
+(function(bh) {
 
 	// Place all component loaders in here
-	dh_css.init = function() {
+	bh.init = function() {
 		Tabs.load();
 	}
 
 	var Tabs = {
 		load: function() {
-			if(!$('.Tabs').length) return;
+			var $tabs = document.querySelectorAll('.Tabs');
+			if(!$tabs.length) return;
 			Tabs.events();
 		},
+		utils: {
+			add_active_class: function(array, target_value, class_name) {
+				array.forEach(function(item) {
+					if(item.dataset.tab != target_value) return;
+					item.classList.add(class_name);
+				});
+			}
+		},
 		events: function() {
-			$('.Tabs__nav-item').on('click', function() {
-				var $this = $(this);
+			document.addEventListener('click', function(e) {
+				if(!e.target.matches('.Tabs__nav-item')) return;
+				e.preventDefault();
 
-				// use parent to keep tab functionality scoped on pages with multiple tab components
-				var $parent = $this.closest('.Tabs');
-				var tab = $this.data('tab');
+				var clicked_link = e.target.dataset.tab;
+				var parent = e.target.closest('.Tabs');
+				var active_elements = parent.querySelectorAll('.is-active');
 
-				// sets active tab nav link
-				$('.Tabs__nav-item', $parent).removeClass('is-active');
-				$this.addClass('is-active');
+				var tab_links = parent.querySelectorAll('.Tabs__nav-item');
+				var tabs = parent.querySelectorAll('.Tab');
 
-				// sets active tab
-				$('.Tab', $parent).removeClass('is-active');
-				$('.Tab[data-tab="' + tab + '"]').addClass('is-active');
-			});
+				active_elements.forEach(function(element) {
+					element.classList.remove('is-active');
+				});
+
+				Tabs.utils.add_active_class(tab_links, clicked_link, 'is-active');
+				Tabs.utils.add_active_class(tabs, clicked_link, 'is-active');
+
+			}, false);
 		}
 	}
 
-	window.onload = dh_css.init();
+	window.onload = bh.init();
 
-})(window.dh_css = window.dh_css || {}, jQuery);
-
-// Popovers
-$(document).on('click', '.js-toggle-popover', function (e) {
-	var $this = $(this),
-		$thisPopover = $this
-			.parent()
-			.children('.Popover');
-
-	$('.js-toggle-popover').not($this).removeClass('is-open');
-	$thisPopover.toggleClass('is-open');
-	$this.toggleClass('is-open');
-	$('.Popover').not($thisPopover).removeClass('is-open');
-
-	e.stopPropagation();
-});
-
-$(document).on('mouseover', '.on-hover', function () {
-	$(this).find('.js-toggle-popover').addClass('is-open');
-});
-
-$(document).on('mouseout', '.on-hover', function () {
-	$('.on-hover')
-		.find('.js-toggle-popover')
-		.removeClass('is-open');
-});
-
-$(document).on('click', '.Popover', function (e) {
-	e.stopPropagation();
-});
-
-$(document).on('click', function (e) {
-	$('.Popover, .js-toggle-popover').removeClass('is-open');
-});
-
-$(document).on('click', '.js-menu-toggle', function(e) {
-	$('.PageHeader').toggleClass('menu-is-open');
-});
+})(window.bh = window.bh || {});

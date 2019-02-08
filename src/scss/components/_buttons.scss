@@ -1,5 +1,5 @@
 .Button {
-	font-family: $body;
+	font-family: $t-body;
 	color: $blue-7;
 	background: transparent;
 	border: solid 1px $gray-3;
@@ -109,7 +109,7 @@
 	&:hover, &:active, &.is-open {
 		background: $gray-2;
 		color: $gray-4;
-		transform: scale($s-3);
+		transform: scale(1);
 		box-shadow: none;
 		border-color: $gray-2;
 	}
@@ -132,7 +132,7 @@
 		border: 0;
 		box-shadow: none;
 		color: darken($blue-3, 10%);
-		transform: scale($s-3);
+		transform: scale(1);
 	}
 
 	&:active { color:rgba($blue-7, 0.6); }
