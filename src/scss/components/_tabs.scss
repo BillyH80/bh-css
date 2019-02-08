@@ -1,5 +1,5 @@
 .Tabs {
-	margin-bottom: convertScaleToRem(5);
+	margin-bottom: 2.5rem;
 }
 
 
@@ -12,7 +12,7 @@
 
 .Tabs__nav-item {
 	cursor: pointer;
-	margin: 0 convertScaleToRem(2);
+	margin: 0 1rem;
 	padding: 0 0 1rem 0;
 	font-size: $t-1;
 	font-weight: $t-bold;
@@ -99,7 +99,7 @@
 		border: solid 1px $gray-2;
 		border-bottom: none;
 		margin: 0;
-		padding: convertScaleToRem(1.5) convertScaleToRem(2);
+		padding: 0.75rem 1rem;
 
 		&:after {
 			height: 0px;

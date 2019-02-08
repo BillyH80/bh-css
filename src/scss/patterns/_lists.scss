@@ -1,8 +1,0 @@
-/*
-	Default list component
-*/
-.List {text-align: left; font-size: $t-1} // All lists should be left aligned unless specified
-.List > li:last-child {margin-bottom: 0;}
-
-.List--disc {list-style-type: disc; list-style-position: outside;}
-.List--disc > li {margin-left: convertScaleToRem(4);}

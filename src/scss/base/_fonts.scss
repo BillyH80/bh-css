@@ -1,0 +1,54 @@
+/**
+Font face
+
+taken from https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+
+usage: @include font-face(FontName, fonts/FontName);
+
+=============================================================================
+Font Face
+=============================================================================
+**/
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+/*
+	Gotham
+
+	Usage:
+	- font-family: 'Gotham', sans-serif;
+*/
+
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Light-Italic', 300, italic);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Light', 300, normal);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Medium-Italic', 400, italic);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Medium', 400, normal);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Bold-Italic', 500, italic);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Bold', 500, normal);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Black-Italic', bold, italic);
+@include font-face('Gotham', '../assets/fonts/gotham/Gotham-Black', bold, normal);
